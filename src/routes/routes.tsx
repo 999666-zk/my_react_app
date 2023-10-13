@@ -9,7 +9,7 @@ const Two = lazy(() => import("../pages/two"));
 const Three = lazy(() => import("../pages/three"));
 const Four = lazy(() => import("../pages/four"));
 const Five = lazy(() => import("../pages/five"));
-
+const Six = lazy(()=>import('../pages/six/index'))
 const innerOne = lazy(() => import("../pages/one/innerOne/index"));
 const routes: Array<RouteObject> = [
   {
@@ -46,6 +46,11 @@ const routes: Array<RouteObject> = [
         path: "/five",
         element: <LazyImportComponent lazyChildren={Five} />,
       },
+      {
+        path: "/six",
+        element: <LazyImportComponent lazyChildren={Six} />,
+      },
+      
     ],
   },
 ];

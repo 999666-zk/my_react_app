@@ -43,6 +43,10 @@ const AppLayout: FC = () => {
       label: "Navigation five",
       key: "five",
     },
+    {
+      label: "Navigation six",
+      key: "six",
+    },
   ];
 
   return (
